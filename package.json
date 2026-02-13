@@ -1,0 +1,20 @@
+{
+  "name": "will-u-be-my-valentine",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "copy-assets": "mkdir -p public/assets && cp -r assets/* public/assets/ 2>/dev/null; cp гифка*.gif public/ 2>/dev/null; true",
+    "dev": "npm run copy-assets && vite",
+    "build": "npm run copy-assets && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.2.1",
+    "vite": "^5.0.0"
+  }
+}
